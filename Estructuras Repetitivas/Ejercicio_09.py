@@ -10,4 +10,24 @@ distintos números enteros por teclado hasta ingresar el número (0) que actuar�
 
 """
 
-#recalculando 😂
+
+def es_primo(dato):
+    for numero in range(2, valor - 1):
+        calculo = valor % numero
+        if calculo == 0:
+            print("no es primo")
+            return
+    print("Es primo")
+
+
+contador = 0
+suma = 0
+while True:
+    valor = int(input("Ingrese un valor-> "))
+    if valor == 0:
+        break
+    es_primo(valor)
+    contador += 1
+    suma += valor
+
+print(f"El promedio de los {contador} numeros ingresados es {suma/contador}")
