@@ -29,8 +29,8 @@ if total > 1000:
     descuento = True
 
 if descuento:
-    lectura= "se"
+    lectura = "se"
 else:
-    lectura= "no se"
+    lectura = "no se"
 
 print(f"El monto a pagar es de {total} {lectura} aplicó descuento (ahorró {des_obtenido} pesos.)")
