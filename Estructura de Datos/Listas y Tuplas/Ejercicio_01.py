@@ -45,7 +45,6 @@ def imprimir_sumatoria(lista):
 
 imprimir_sumatoria(lista_numeros)
 
-
 otro_numero = int(input("Ingrese otro numero para crear una nueva lista con numeros menos al ingresado-> "))
 nueva_lista = []
 for number in lista_numeros:
@@ -53,4 +52,10 @@ for number in lista_numeros:
         nueva_lista.append(number)
 print(f"La nueva lista contiene todos los numeros menores a {otro_numero} ellos son: {nueva_lista}")
 
-#me falta el punto E
+lista_tuplas = []
+
+for numero in range(len(lista_numeros)):
+    cantidad = lista_numeros.count(lista_numeros[numero])
+    if not lista_tuplas.__contains__((lista_numeros[numero], cantidad)):
+        lista_tuplas.append((lista_numeros[numero], cantidad))
+print(f"Nueva lista de tuplas con valor numero,cantidad {lista_tuplas}")
